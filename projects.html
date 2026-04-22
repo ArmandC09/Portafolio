@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArmandC — Proyectos</title>
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/projects.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>>_</text></svg>" />
+</head>
+<body>
+<script src="assets/js/loader.js"></script>
+
+<div id="nav-slot"></div>
+
+<div class="page-wrapper">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="section-label" data-t="proj_label">PROYECTOS</p>
+      <h1 class="page-hero-title" data-t="proj_title">Lo que construyo</h1>
+      <p class="page-hero-desc" data-t="proj_desc">Una selección de proyectos que muestran mis capacidades técnicas y creatividad.</p>
+      <div class="glow-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══ FILTER + GRID ═══ -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all" data-t="proj_all">Todos</button>
+        <button class="filter-btn" data-filter="web" data-t="proj_web">Web</button>
+        <button class="filter-btn" data-filter="ai" data-t="proj_ai">IA / ML</button>
+        <button class="filter-btn" data-filter="mobile" data-t="proj_mobile">Móvil</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- SOLARSUR -->
+        <div class="proj-card reveal" data-category="web">
+          <div class="proj-card-top">
+            <div class="proj-icon">⚡</div>
+            <div class="proj-links">
+              <a href="https://github.com/ArmandC09/PROYECTO-SOLARSUR" class="proj-link" target="_blank" rel="noopener" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">PROYECTO SOLARSUR</h3>
+          <p class="proj-desc">Sistema ERP completo para empresa de energía solar. Gestión de clientes, inventario, cotizaciones PDF, ventas, proveedores, auditoría multi-rol con JWT.</p>
+          <div class="proj-tags">
+            <span class="tag">React</span><span class="tag">Vite</span><span class="tag">Node.js</span><span class="tag">MySQL</span><span class="tag">JWT</span><span class="tag">PDF</span>
+          </div>
+          <div class="proj-footer">
+            <span class="feat-status status-done" data-t="proj_status_done">Completado</span>
+            <div class="proj-metrics">
+              <span class="mono" style="font-size:0.72rem;color:var(--text-muted)">4 roles · 8 módulos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Vision API -->
+        <div class="proj-card reveal reveal-delay-1" data-category="ai">
+          <div class="proj-card-top">
+            <div class="proj-icon">🧠</div>
+            <div class="proj-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">AI Vision API</h3>
+          <p class="proj-desc">API REST de visión computacional para clasificación de imágenes en tiempo real. CNN personalizada con TensorFlow, 94% de precisión en dataset de prueba.</p>
+          <div class="proj-tags">
+            <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Flask</span><span class="tag">CNN</span><span class="tag">REST API</span>
+          </div>
+          <div class="proj-footer">
+            <span class="feat-status status-wip" data-t="proj_status_wip">En Progreso</span>
+            <div class="proj-metrics">
+              <span class="mono" style="font-size:0.72rem;color:var(--accent)">94% accuracy</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TaskFlow -->
+        <div class="proj-card reveal reveal-delay-2" data-category="mobile">
+          <div class="proj-card-top">
+            <div class="proj-icon">✅</div>
+            <div class="proj-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">TaskFlow App</h3>
+          <p class="proj-desc">Aplicación móvil de gestión de tareas con sincronización en tiempo real, notificaciones push inteligentes y soporte offline.</p>
+          <div class="proj-tags">
+            <span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Firebase</span>
+          </div>
+          <div class="proj-footer">
+            <span class="feat-status status-done" data-t="proj_status_done">Completado</span>
+          </div>
+        </div>
+
+        <!-- NLP Sentiment -->
+        <div class="proj-card reveal" data-category="ai">
+          <div class="proj-card-top">
+            <div class="proj-icon">💬</div>
+            <div class="proj-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Sentiment Analyzer</h3>
+          <p class="proj-desc">Análisis de sentimientos en texto con LSTM y BERT. Procesamiento de reseñas en español e inglés con 91% de F1-score.</p>
+          <div class="proj-tags">
+            <span class="tag">Python</span><span class="tag">BERT</span><span class="tag">LSTM</span><span class="tag">NLP</span>
+          </div>
+          <div class="proj-footer">
+            <span class="feat-status status-done" data-t="proj_status_done">Completado</span>
+            <span class="mono" style="font-size:0.72rem;color:var(--accent)">F1: 91%</span>
+          </div>
+        </div>
+
+        <!-- Dashboard Analytics -->
+        <div class="proj-card reveal reveal-delay-1" data-category="web">
+          <div class="proj-card-top">
+            <div class="proj-icon">📊</div>
+            <div class="proj-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">Analytics Dashboard</h3>
+          <p class="proj-desc">Panel de analíticas en tiempo real con gráficos interactivos, filtros dinámicos y exportación de datos. Conectado a APIs externas.</p>
+          <div class="proj-tags">
+            <span class="tag">React</span><span class="tag">Chart.js</span><span class="tag">Node.js</span><span class="tag">WebSocket</span>
+          </div>
+          <div class="proj-footer">
+            <span class="feat-status status-done" data-t="proj_status_done">Completado</span>
+          </div>
+        </div>
+
+        <!-- AutoML Pipeline -->
+        <div class="proj-card reveal reveal-delay-2" data-category="ai">
+          <div class="proj-card-top">
+            <div class="proj-icon">🤖</div>
+            <div class="proj-links">
+              <a href="#" class="proj-link" title="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="proj-title">AutoML Pipeline</h3>
+          <p class="proj-desc">Pipeline automatizado de Machine Learning: limpieza de datos, feature engineering, selección de modelo y evaluación. CLI + interfaz web.</p>
+          <div class="proj-tags">
+            <span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">MLflow</span>
+          </div>
+          <div class="proj-footer">
+            <span class="feat-status status-wip" data-t="proj_status_wip">En Progreso</span>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+
+      <!-- Empty state -->
+      <div class="empty-state" id="empty-state" style="display:none">
+        <span class="mono" style="color:var(--text-muted)">// No se encontraron proyectos</span>
+      </div>
+
+    </div>
+  </section>
+
+</div><!-- /page-wrapper -->
+
+<div id="footer-slot"></div>
+<div id="float-slot"></div>
+
+<script src="assets/js/components.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/projects.js"></script>
+</body>
+</html>
